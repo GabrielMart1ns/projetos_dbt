@@ -1,0 +1,1 @@
+SELECT * FROM `portfolio-101-417118.dbt_projects.inscritos`
