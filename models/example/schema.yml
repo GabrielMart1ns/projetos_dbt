@@ -2,20 +2,29 @@
 version: 2
 
 models:
-    - name: my_first_dbt_model
-      description: "A starter dbt model"
+    - name: inscritos
+      description: "Nome e idade dos inscritos"
       columns:
-          - name: id
-            description: "The primary key for this table"
+          - name: Name
+            description: "Nome dos inscritos"
             tests:
                 - unique
+                
+
+    - name: stage_inscritos
+      description: "Dados de inscritos transformados"
+      columns:
+          - name: majority
+            description: "True se a idade for maior que 25"
+            tests:
                 - not_null
 
-    - name: my_second_dbt_model
-      description: "A starter dbt model"
+    - name: analise_inscritos
+      description: "Agrupamento de maioridades"
       columns:
-          - name: id
-            description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null
+        - name: majority
+          description: "Aceitar somente valores True e False"
+          tests:
+            - accepted_values:
+                values: [true, false]
+                quote: false
