@@ -2,7 +2,10 @@
 version: 2
 
 sources:
-  - name: dados_de_rh
-    description: Tabela de dados de Recursos Humanos
+  - name: dbt_projects
+    description: Dataset de RH
     database: portfolio-101-417118
     schema: dbt_projects
+    tables:
+      - name: tabela_rh
+        description: Tabela com dados de RH
