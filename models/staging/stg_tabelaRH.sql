@@ -6,7 +6,7 @@ SELECT
     `estado civil` as estado_civil,
     departamento,
     funcao,
-    viagem,
+    viagem as frequencia_de_viagem,
     `valor diaria` as valor_diaria,
     indice_envolvimento_trabalho,
     nivel_satisfacao_trabalho,

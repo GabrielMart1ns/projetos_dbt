@@ -5,7 +5,7 @@ SELECT
     estado_civil,
     departamento,
     funcao,
-    viagem,
+    frequencia_de_viagem,
     valor_diaria,
     indice_envolvimento_trabalho,
     nv_envolvimento_trabalho,
