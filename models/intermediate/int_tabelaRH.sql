@@ -9,7 +9,7 @@ SELECT
     salario_mensal,
     frequencia_de_viagem,
     valor_diaria,
-    aval_envolvimento_trabalho,
+    nv_envolvimento_trabalho,
     aval_satisfacao_trabalho,
     aval_hora_extra,
     classificacao_performance,
